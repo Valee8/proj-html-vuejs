@@ -16,8 +16,8 @@ export default {
     <header>
 
         <nav>
-            <ul>
-                <li v-for="(link, index) in links" :key="index">
+            <ul class="links">
+                <li v-for="(link, index) in links" :key="index" :class="{ active: link.current }">
                     <a :href="link.url">
                         {{ link.text }}</a>
                 </li>
