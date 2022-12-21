@@ -52,4 +52,11 @@ export default {
   text-transform: uppercase;
   font-size: 0.6rem;
 }
+
+.text-content {
+
+  & *:not(.btn) {
+    padding-bottom: 20px;
+  }
+}
 </style>
