@@ -15,6 +15,8 @@ export default {
 
     <header>
 
+        <img src="/img/avada-bakery-logo.png" alt="logo bakery" class="logo">
+
         <nav>
             <ul class="links">
                 <li v-for="(link, index) in links" :key="index" :class="{ active: link.current }">
