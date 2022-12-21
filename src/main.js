@@ -9,7 +9,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import { faCartShopping, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 /* add icons to the library */
-library.add(faCartShopping, faAngleLeft, faAngleRight)
+library.add(faCartShopping, faAngleLeft, faAngleRight, faInstagram)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
