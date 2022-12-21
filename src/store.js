@@ -46,6 +46,11 @@ export const store = reactive({
             text: 'My Account',
             url: '#',
             current: 'false'
-        }
+        },
+        {
+            text: 'Orders',
+            url: '#',
+            current: 'false'
+        },
     ]
 });
