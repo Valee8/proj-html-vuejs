@@ -83,9 +83,9 @@ export default {
         <div class="jumbotron">
 
             <div class="text-content">
-                <div class="mini-title">
+                <h5>
                     Fresh &amp; Tasty Bakery Everyday
-                </div>
+                </h5>
 
                 <h1>
                     The Perfect Fresh Bread

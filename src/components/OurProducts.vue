@@ -11,9 +11,9 @@ export default {
 
         <div class="container">
             <div class="text-content">
-                <div class="mini-title">
+                <h5>
                     Our Products
-                </div>
+                </h5>
 
                 <h2>
                     All our delectable pastries are backed fresh in our Kitchen very morning, and are made with

@@ -10,9 +10,9 @@ export default {
     <section>
 
         <div class="container">
-            <div class="mini-title">
+            <h5>
                 Corporate &amp; Weddings
-            </div>
+            </h5>
 
             <h2>
                 Baking Special Moments
