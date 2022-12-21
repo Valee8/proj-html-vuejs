@@ -31,6 +31,28 @@ export default {
 @use '../src/styles/general.scss' as *;
 @use '../src/styles/partials/variables' as *;
 
+h1 {
+
+  font-size: 2.5rem;
+}
+
+h1,
+h2 {
+  font-family: 'Lora', serif;
+  color: $dark-violet-color;
+}
+
+.links {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  font-size: 0.6rem;
+
+  a {
+    color: $dark-violet-color;
+  }
+}
+
 
 .btn {
   padding: 9px 25px;
