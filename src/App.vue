@@ -30,4 +30,13 @@ export default {
 <style lang="scss">
 @use '../src/styles/general.scss' as *;
 @use '../src/styles/partials/variables' as *;
+
+
+.btn {
+  background-color: $white-color;
+  color: $dark-violet-color;
+  padding: 9px 25px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+}
 </style>
