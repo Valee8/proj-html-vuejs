@@ -3,7 +3,9 @@
 import OurProducts from '../components/OurProducts.vue'
 import CorporateWeddings from '../components/CorporateWeddings.vue'
 import ListProducts from '../components/ListProducts.vue'
+import ProcessProducts from '../components/ProcessProducts.vue'
 import Locations from '../components/Locations.vue'
+
 
 export default {
     name: "AppMain",
@@ -11,6 +13,7 @@ export default {
         OurProducts,
         CorporateWeddings,
         ListProducts,
+        ProcessProducts,
         Locations,
     }
 }
@@ -23,6 +26,8 @@ export default {
     <CorporateWeddings />
 
     <ListProducts />
+
+    <ProcessProducts />
 
     <Locations />
 
