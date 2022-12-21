@@ -82,7 +82,7 @@ export default {
 
         <div class="jumbotron">
 
-            <div class="header-content">
+            <div class="text-content">
                 <div class="mini-title">
                     Fresh &amp; Tasty Bakery Everyday
                 </div>
@@ -202,13 +202,9 @@ header {
             }
         }
 
-        .header-content {
+        .text-content {
             width: 350px;
             color: $text-color;
-
-            & *:not(.btn) {
-                padding-bottom: 20px;
-            }
 
             h1 {
                 color: $dark-violet-color;
