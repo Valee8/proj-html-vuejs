@@ -5,7 +5,7 @@ import CorporateWeddings from '../components/CorporateWeddings.vue'
 import ListProducts from '../components/ListProducts.vue'
 import ProcessProducts from '../components/ProcessProducts.vue'
 import Locations from '../components/Locations.vue'
-
+import Sharing from '../components/Sharing.vue'
 
 export default {
     name: "AppMain",
@@ -15,6 +15,7 @@ export default {
         ListProducts,
         ProcessProducts,
         Locations,
+        Sharing
     }
 }
 </script>
@@ -30,6 +31,8 @@ export default {
     <ProcessProducts />
 
     <Locations />
+
+    <Sharing />
 
 </template>
 
