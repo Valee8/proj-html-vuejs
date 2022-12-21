@@ -48,7 +48,7 @@ export default {
   }
 }
 
-.mini-title {
+h5 {
   text-transform: uppercase;
   font-size: 0.6rem;
 }
