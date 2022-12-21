@@ -167,7 +167,7 @@ header {
 
     .jumbotron {
         width: 100%;
-        min-height: 540px;
+        min-height: 530px;
         padding: 120px 0 0 80px;
         position: relative;
 
