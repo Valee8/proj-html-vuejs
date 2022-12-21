@@ -47,4 +47,9 @@ export default {
     color: $white-color;
   }
 }
+
+.mini-title {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
 </style>
