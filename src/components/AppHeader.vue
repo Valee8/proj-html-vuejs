@@ -71,6 +71,11 @@ export default {
                     <a :href="link.url">
                         {{ link.text }}</a>
                 </li>
+                <li>
+                    <a href="#">
+                        <font-awesome-icon icon="fa-solid fa-cart-shopping" />
+                    </a>
+                </li>
             </ul>
         </nav>
 
