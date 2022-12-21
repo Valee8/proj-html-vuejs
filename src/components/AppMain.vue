@@ -1,12 +1,14 @@
 <script>
 
 import OurProducts from '../components/OurProducts.vue'
+import CorporateWeddings from '../components/CorporateWeddings.vue'
 
 
 export default {
     name: "AppMain",
     components: {
         OurProducts,
+        CorporateWeddings
     }
 }
 </script>
@@ -14,6 +16,8 @@ export default {
 <template>
 
     <OurProducts />
+
+    <CorporateWeddings />
 
 </template>
 
@@ -23,13 +27,5 @@ export default {
 
 section {
     padding: 100px 0;
-}
-
-#corporate-weddings {
-    text-align: center;
-
-    img {
-        width: 50%;
-    }
 }
 </style>
