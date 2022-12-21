@@ -83,7 +83,7 @@ export default {
         <div class="jumbotron">
 
             <div class="header-content">
-                <div class="header-title">
+                <div class="mini-title">
                     Fresh &amp; Tasty Bakery Everyday
                 </div>
 
@@ -96,7 +96,7 @@ export default {
                     asperiores
                 </p>
 
-                <a href="#" class="btn">
+                <a href="#" class="btn white">
                     Explore our products
                 </a>
 
