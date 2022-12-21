@@ -7,7 +7,7 @@ export default {
 
 <template>
 
-    <section id="corporate-weddings">
+    <section>
 
         <div class="container">
             <div class="mini-title">
