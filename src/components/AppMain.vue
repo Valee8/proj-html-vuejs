@@ -9,7 +9,7 @@ export default {
 
     <section id="our-products">
 
-        <div class="container">
+        <div class="container flex">
             <div class="text-content">
                 <div class="mini-title">
                     Our Products
@@ -53,8 +53,11 @@ section {
     padding: 100px 0;
 
     .container {
-        display: flex;
-        justify-content: space-between;
+
+        &.flex {
+            display: flex;
+            justify-content: space-between;
+        }
 
         .text-content {
             width: 30%;
@@ -91,6 +94,14 @@ section {
                 }
             }
         }
+    }
+}
+
+#corporate-weddings {
+    text-align: center;
+
+    img {
+        width: 50%;
     }
 }
 </style>
