@@ -1,14 +1,11 @@
 <script>
 
-import { store } from '../store.js';
-
+import AppNav from '../components/AppNav.vue'
 
 export default {
     name: "AppHeader",
-    data() {
-        return {
-            store,
-        }
+    components: {
+        AppNav
     }
 }
 </script>
@@ -17,24 +14,7 @@ export default {
 
     <header>
 
-        <nav>
-
-            <a href="/">
-                <img src="/img/avada-bakery-logo.png" alt="logo bakery" class="logo">
-            </a>
-
-            <ul class="links">
-                <li v-for="(link, index) in store.links" :key="index" :class="{ active: link.current }">
-                    <a :href="link.url">
-                        {{ link.text }}</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <font-awesome-icon icon="fa-solid fa-cart-shopping" />
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <AppNav />
 
         <div class="jumbotron">
 
@@ -96,30 +76,6 @@ header {
     background-image: url('/img/hero-header-bakery.jpg');
     background-position: 0 -60px;
     background-size: cover;
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 30px;
-
-        .logo {
-            width: 150px;
-        }
-
-        .links {
-            display: flex;
-            list-style-type: none;
-            gap: 20px;
-            font-size: 0.6rem;
-            text-transform: uppercase;
-
-            a {
-                color: $dark-violet-color;
-            }
-        }
-    }
 
     .jumbotron {
         width: 100%;
