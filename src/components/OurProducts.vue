@@ -29,11 +29,13 @@ export default {
 
             <div class="img-content">
                 <img src="/img/choco-chip-cookies-400x510.jpg" alt="Choco Chip Cookies">
-                <img src="/img/strawberry-jam-cookies-400x510.jpg" alt="Straberry Jam Cookies">
 
                 <a href="#" class="left-arrow">
                     <font-awesome-icon icon="fa-solid fa-angle-left" />
                 </a>
+            </div>
+            <div class="img-content">
+                <img src="/img/strawberry-jam-cookies-400x510.jpg" alt="Straberry Jam Cookies">
 
                 <a href="#" class="right-arrow">
                     <font-awesome-icon icon="fa-solid fa-angle-right" />
@@ -51,26 +53,34 @@ export default {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    gap: 14px;
 
-    .text-content {
-        width: 30%;
+    div {
+        width: calc(100% / 3);
+
+        h5 {
+            color: $text-color;
+        }
+
+        h2 {
+            padding-bottom: 60px;
+        }
     }
 
     .img-content {
         position: relative;
 
         img {
-            margin: 0 8px;
             vertical-align: middle;
+            width: 100%;
         }
 
         .left-arrow {
-            left: 8px;
+            left: 0;
         }
 
         .right-arrow {
-            right: 8px;
+            right: 0;
         }
 
         .left-arrow,
