@@ -15,7 +15,9 @@ export default {
 
     <header>
 
-        <img src="/img/avada-bakery-logo.png" alt="logo bakery" class="logo">
+        <a href="/">
+            <img src="/img/avada-bakery-logo.png" alt="logo bakery" class="logo">
+        </a>
 
         <nav>
             <ul class="links">
