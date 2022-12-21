@@ -10,13 +10,15 @@ export default {
     <section>
 
         <div class="container">
-            <h5>
-                Corporate &amp; Weddings
-            </h5>
+            <div class="text-content">
+                <h5>
+                    Corporate &amp; Weddings
+                </h5>
 
-            <h2>
-                Baking Special Moments
-            </h2>
+                <h2>
+                    Baking Special Moments
+                </h2>
+            </div>
 
             <div class="img-content">
                 <img src="/img/corporate-bg.jpg" alt="Corporate">
@@ -35,13 +37,10 @@ export default {
 section {
     text-align: center;
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-
-        img {
-            width: 50%;
-        }
+    img {
+        width: calc(50% - 40px);
+        margin: 0 20px;
     }
+
 }
 </style>
