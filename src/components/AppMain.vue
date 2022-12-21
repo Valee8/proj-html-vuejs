@@ -10,7 +10,7 @@ export default {
     <section id="our-products">
 
         <div class="container">
-            <div class="text-section">
+            <div class="text-content">
                 <div class="mini-title">
                     Our Products
                 </div>
@@ -27,7 +27,7 @@ export default {
                 </a>
             </div>
 
-            <div class="img-section">
+            <div class="img-content">
                 <img src="/img/choco-chip-cookies-400x510.jpg" alt="Choco Chip Cookies">
                 <img src="/img/strawberry-jam-cookies-400x510.jpg" alt="Straberry Jam Cookies">
 
@@ -56,15 +56,11 @@ section {
         display: flex;
         justify-content: space-between;
 
-        .text-section {
+        .text-content {
             width: 30%;
-
-            & *:not(.btn) {
-                padding-bottom: 20px;
-            }
         }
 
-        .img-section {
+        .img-content {
             position: relative;
 
             img {
