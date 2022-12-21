@@ -33,10 +33,18 @@ export default {
 
 
 .btn {
-  background-color: $white-color;
-  color: $dark-violet-color;
   padding: 9px 25px;
   border-radius: 3px;
   font-size: 0.7rem;
+
+  &.white {
+    background-color: $white-color;
+    color: $dark-violet-color;
+  }
+
+  &.violet {
+    background-color: $dark-violet-color;
+    color: $white-color;
+  }
 }
 </style>
