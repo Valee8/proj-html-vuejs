@@ -7,7 +7,7 @@ export default {
 
 <template>
 
-    <section id="our-products">
+    <section>
 
         <div class="container">
             <div class="text-content">
