@@ -30,4 +30,17 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/general.scss' as *;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    .links {
+        display: flex;
+        list-style-type: none;
+        gap: 10px;
+    }
+}
 </style>
