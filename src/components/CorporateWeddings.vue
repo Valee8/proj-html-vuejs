@@ -25,9 +25,47 @@ export default {
 
             <!-- Contenuto con immagini -->
             <div class="img-content">
-                <img src="/img/corporate-bg.jpg" alt="Corporate">
+                <div class="image">
+                    <img src="/img/corporate-bg.jpg" alt="Corporate" class="img">
+                    <img src="/img/corporate-hover-bg.jpg" alt="Corporate" class="img-hover">
 
-                <img src="/img/wedding-bg.jpg" alt="Wedding">
+                    <div class="content-hover">
+
+                        <h5>
+                            International Bakery
+                        </h5>
+
+                        <h2>
+                            Corporate Events
+                        </h2>
+
+                        <a href="#" class="btn violet">
+                            Explore More
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img src="/img/wedding-bg.jpg" alt="Wedding" class="img">
+                    <img src="/img/wedding-hover-bg.jpg" alt="Wedding" class="img-hover">
+
+                    <div class="content-hover">
+
+                        <h5>
+                            Private Dining Hall
+                        </h5>
+
+                        <h2>
+                            Weddings &amp; Parties
+                        </h2>
+
+                        <a href="#" class="btn violet">
+                            Explore More
+                        </a>
+
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -51,16 +89,56 @@ section {
         }
     }
 
-    img {
-        width: calc(50% - 35px);
-        margin: 0 35px;
+    .img-content {
+        display: flex;
 
-        &:first-child {
-            margin-left: 0;
-        }
+        .image {
+            width: calc(50% - 35px);
+            margin: 0 35px;
+            position: relative;
 
-        &:last-child {
-            margin-right: 0;
+            .img-hover {
+                display: none;
+            }
+
+            &:hover .img {
+                display: none;
+            }
+
+            &:hover .content-hover,
+            &:hover .img-hover {
+                display: block;
+            }
+
+            .content-hover {
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                h5 {
+                    color: $white-color;
+                    text-shadow: 0 1px 0 #000;
+                }
+
+                h2 {
+                    padding: 15px 0 20px 0;
+                    color: $white-color;
+                    text-shadow: 0 1px 0 #000;
+                }
+            }
+
+            img {
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
         }
     }
 
