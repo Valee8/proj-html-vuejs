@@ -41,9 +41,9 @@ export default {
 
                 <img src="/img/social-3.jpg" alt="Social 3">
 
-                <img src="/img/social-4.jpg" alt="Social 4">
-
                 <img src="/img/social-5.jpg" alt="Social 5">
+
+                <img src="/img/social-4.jpg" alt="Social 4">
 
                 <img src="/img/social-6.jpg" alt="Social 6">
 
@@ -67,6 +67,11 @@ export default {
     .top-section {
         display: flex;
         justify-content: space-between;
+
+        h5 {
+            color: $text-color;
+            padding-bottom: 10px;
+        }
 
         .follow-us {
             background-color: #f2eef4;
