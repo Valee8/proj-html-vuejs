@@ -31,7 +31,6 @@ export default {
 
 header {
     background-image: url('/img/hero-header-bakery.jpg');
-    background-position: 0 -60px;
     background-size: cover;
 
 }
