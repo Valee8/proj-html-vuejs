@@ -88,7 +88,9 @@ export default {
 
 .links {
     li {
-        &:first-child {
+
+        &:first-child,
+        &:nth-child(8) {
             display: none;
         }
     }

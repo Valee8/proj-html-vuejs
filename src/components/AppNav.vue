@@ -55,7 +55,7 @@ nav {
         text-transform: uppercase;
 
         li {
-            &:nth-child(10) {
+            &:nth-child(9) {
                 display: none;
             }
         }
