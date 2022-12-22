@@ -33,11 +33,6 @@ export const store = reactive({
             current: 'false'
         },
         {
-            text: 'Gallery',
-            url: '#',
-            current: 'false'
-        },
-        {
             text: 'Contact',
             url: '#',
             current: 'false'
