@@ -76,6 +76,7 @@ export default {
     min-height: 600px;
     padding-top: 120px;
     position: relative;
+    margin-bottom: 80px;
 
     .header-icons {
         right: 13px;
