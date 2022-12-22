@@ -85,6 +85,13 @@ export default {
                 left: 50%;
                 transform: translate(-50%, -50%);
 
+                .btn {
+                    &:hover {
+                        background-color: $white-color;
+
+                    }
+                }
+
                 h2 {
                     padding-bottom: 30px;
 
