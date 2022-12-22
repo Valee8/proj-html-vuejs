@@ -12,6 +12,7 @@ export default {
     },
     data() {
         return {
+            // Array icone social presenti in BottomFooter
             icons: [
                 {
                     icon: 'fa-brands fa-instagram',
@@ -37,11 +38,14 @@ export default {
 
 <template>
 
+
     <footer>
 
         <div class="container">
+            <!-- Parte sopra footer -->
             <TopFooter />
 
+            <!-- Parte sotto footer -->
             <BottomFooter :social="icons" />
         </div>
 

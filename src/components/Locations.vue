@@ -7,10 +7,12 @@ export default {
 
 <template>
 
+    <!-- Sezione Locations -->
     <section>
 
         <div class="container">
 
+            <!-- Parte con i titoli in alto -->
             <div class="text-content">
                 <h5>
                     Locations
@@ -21,16 +23,20 @@ export default {
                 </h2>
             </div>
 
+            <!-- Inizio prima location -->
             <div class="locations">
-                <div class="location new-york">
 
+                <div class="location new-york">
+                    <!-- Immagine -->
                     <img src="/img/new-york-bk.jpg" alt="New York Bakerie">
 
+                    <!-- Luogo location -->
                     <h2>
                         New York
 
                     </h2>
 
+                    <!-- Informazioni location -->
                     <div class="info-location">
                         <div class="info">
                             <h5>
@@ -50,6 +56,7 @@ export default {
                             </div>
                         </div>
 
+                        <!-- Bottone -->
                         <div class="info">
                             <a href="#" class="btn white">
                                 View Map
@@ -61,12 +68,15 @@ export default {
 
                 <div class="location london">
 
+                    <!-- Immagine location -->
                     <img src="/img/london-bk.jpg" alt="London Bakerie">
 
+                    <!-- Luogo location -->
                     <h2>
                         London
                     </h2>
 
+                    <!-- Informazioni location -->
                     <div class="info-location">
                         <div class="info">
                             <h5>
@@ -85,6 +95,8 @@ export default {
                                 9:00 AM - 6:00 PM
                             </div>
                         </div>
+
+                        <!-- Bottone -->
                         <div class="info">
                             <a href="#" class="btn white">
                                 View Map

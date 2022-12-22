@@ -7,16 +7,22 @@ export default {
 
 <template>
 
+    <!-- Sezione Sharing -->
     <section>
 
         <div class="container">
 
+            <!-- Primo blocco - immagini ai lati e link social al centro -->
             <div class="top-section">
+                <!-- Immagine a sinistra -->
                 <img src="/img/social-1.jpg" alt="Social 1">
 
+                <!-- Parte centrale -->
                 <div class="follow-us">
 
+                    <!-- Contenuto parte centrale -->
                     <div class="content">
+                        <!-- Titoli -->
                         <h5>
                             Made for sharing
                         </h5>
@@ -25,6 +31,7 @@ export default {
                             Let's stay in touch
                         </h2>
 
+                        <!-- Bottone -->
                         <a href="#" class="btn violet">
                             <font-awesome-icon icon="fa-brands fa-instagram" class="instagram" /> Follow us
                         </a>
@@ -32,11 +39,13 @@ export default {
 
                 </div>
 
+                <!-- Immagine a destra -->
                 <img src="/img/social-2.jpg" alt="Social 2">
 
 
             </div>
 
+            <!-- Secondo blocco con 4 immagini affiancate -->
             <div class="bottom-section">
 
                 <img src="/img/social-3.jpg" alt="Social 3">
@@ -48,8 +57,6 @@ export default {
                 <img src="/img/social-6.jpg" alt="Social 6">
 
             </div>
-
-
 
         </div>
 

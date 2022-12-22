@@ -1,6 +1,7 @@
 <script>
 
 import AppNav from '../components/AppNav.vue'
+
 import AppJumbotron from '../components/AppJumbotron.vue'
 
 export default {
@@ -16,8 +17,10 @@ export default {
 
     <header>
 
+        <!-- Nav -->
         <AppNav />
 
+        <!-- Jumbotron -->
         <AppJumbotron />
 
     </header>

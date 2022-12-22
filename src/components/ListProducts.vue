@@ -4,6 +4,7 @@ export default {
     name: "ListProducts",
     data() {
         return {
+            // Array contenente info prodotti
             products: [
                 {
                     nameProduct: 'Choco Chip Cookies',
@@ -73,6 +74,7 @@ export default {
                         <font-awesome-icon icon="fa-solid fa-angle-right" />
                     </a>
 
+                    <!-- Contenuto prodotti che appare all'hover -->
                     <div class="hover-content">
                         <div class="hover-titles">
                             <h5>

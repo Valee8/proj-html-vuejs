@@ -7,26 +7,34 @@ export default {
 
 <template>
 
+    <!-- Sezione Process Products -->
     <section>
 
         <div class="container">
 
+            <!-- Prima card -->
             <div class="card one">
 
                 <div class="brightness">
+
+                    <!-- Numero sulla destra -->
                     <div class="number">
                         01
                     </div>
 
+                    <!-- Titolo -->
                     <h1>
                         Tell us what you have in mind
                     </h1>
 
+                    <!-- Testo -->
                     <div class="text-card">
+                        <!-- Titolo secondario -->
                         <h5>
                             Manual Ingredients selection
                         </h5>
 
+                        <!-- Paragrafo -->
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi incidunt iure sed, facilis,
                             ipsum
@@ -38,22 +46,30 @@ export default {
                 </div>
             </div>
 
+            <!-- Seconda card sulla sinistra -->
             <div class="card two">
 
                 <div class="brightness">
+
+                    <!-- Numero sulla destra -->
                     <div class="number">
                         02
                     </div>
 
+                    <!-- Titolo -->
                     <h1>
                         We Start Baking
                     </h1>
 
+                    <!-- Testo -->
                     <div class="text-card">
+
+                        <!-- Titolo secondario -->
                         <h5>
                             Sweet & Delicious
                         </h5>
 
+                        <!-- Paragrafo -->
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi incidunt iure sed, facilis,
                             ipsum
@@ -65,38 +81,48 @@ export default {
                 </div>
             </div>
 
+            <!-- Terza card sulla destra -->
             <div class="card three">
+                <!-- Titolo secondario -->
                 <h5>
                     Dont just take our word for it
                 </h5>
 
+                <!-- Titolo -->
                 <h1>
                     &ldquo;Finally found an alternative to the mass produced products. Something that incorporates real
                     organic
                     ingredients, nutrient dense wellness while promoting sustainability and activity.&rdquo;
                 </h1>
 
+                <!-- Titolo secondario -->
                 <h5>
                     Rachel Cooper, Founder
                 </h5>
             </div>
 
+            <!-- Quarta card -->
             <div class="card four">
 
                 <div class="brightness">
+                    <!-- Numero sulla destra -->
                     <div class="number">
                         03
                     </div>
 
+                    <!-- Titolo -->
                     <h1>
                         Delivered to your home
                     </h1>
 
+                    <!-- Testo -->
                     <div class="text-card">
+                        <!-- Titolo secondario -->
                         <h5>
                             Baked to order & Gift Wrapped
                         </h5>
 
+                        <!-- Paragrafo -->
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi incidunt iure sed, facilis,
                             ipsum

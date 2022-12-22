@@ -1,6 +1,7 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
+    // Array links presenti nell'header e nel footer
     links: [
         {
             text: 'Home',

@@ -26,6 +26,7 @@ export default {
             <!-- Contenuto con immagini -->
             <div class="img-content">
 
+                <!-- Icone in alto a destra - appaiono all'hover -->
                 <ul class="header-icons">
 
                     <li>
@@ -52,12 +53,16 @@ export default {
                     </li>
 
                 </ul>
+
+                <!-- Parte immagine Corporate -->
                 <div class="image">
                     <img src="/img/corporate-bg.jpg" alt="Corporate" class="img">
                     <img src="/img/corporate-hover-bg.jpg" alt="Corporate" class="img-hover">
 
+                    <!-- Info immagine Corporate che appare all'hover -->
                     <div class="content-hover">
 
+                        <!-- Titoli -->
                         <h5>
                             International Bakery
                         </h5>
@@ -66,6 +71,7 @@ export default {
                             Corporate Events
                         </h2>
 
+                        <!-- Bottone -->
                         <a href="#" class="btn violet">
                             Explore More
                         </a>
@@ -73,12 +79,15 @@ export default {
                     </div>
                 </div>
 
+                <!-- Parte immagine Weddings -->
                 <div class="image">
                     <img src="/img/wedding-bg.jpg" alt="Wedding" class="img">
                     <img src="/img/wedding-hover-bg.jpg" alt="Wedding" class="img-hover">
 
+                    <!-- Info immagine Weddings che appare all'hover -->
                     <div class="content-hover">
 
+                        <!-- Titoli -->
                         <h5>
                             Private Dining Hall
                         </h5>
@@ -87,6 +96,7 @@ export default {
                             Weddings &amp; Parties
                         </h2>
 
+                        <!-- Bottone -->
                         <a href="#" class="btn violet">
                             Explore More
                         </a>

@@ -7,10 +7,14 @@ export default {
 
 <template>
 
+    <!-- Sezione Our Products -->
     <section>
 
         <div class="container">
+
+            <!-- Parte sulla sinistra con titoli e bottone -->
             <div class="text-content">
+                <!-- Titoli -->
                 <h5>
                     Our Products
                 </h5>
@@ -20,19 +24,22 @@ export default {
                     all-natural, all organic ingredients
                 </h2>
 
+                <!-- Bottone -->
                 <a href="#" class="btn violet">
                     Start Shopping
                 </a>
             </div>
 
+            <!-- Parte immagini a sinistra -->
             <div class="img-content">
                 <img src="/img/choco-chip-cookies-400x510.jpg" alt="Choco Chip Cookies">
 
+                <!-- Freccia sinistra -->
                 <a href="#" class="left-arrow">
                     <font-awesome-icon icon="fa-solid fa-angle-left" />
                 </a>
 
-
+                <!-- Contenuto immagini che appare all'hover -->
                 <div class="hover-content">
                     <div class="hover-titles">
                         <h3>
@@ -48,15 +55,20 @@ export default {
                         </h3>
                     </div>
                 </div>
+
             </div>
+
             <div class="img-content">
+
                 <img src="/img/strawberry-jam-cookies-400x510.jpg" alt="Straberry Jam Cookies">
 
+                <!-- Freccia destra -->
                 <a href="#" class="right-arrow">
                     <font-awesome-icon icon="fa-solid fa-angle-right" />
                 </a>
 
 
+                <!-- Contenuto immagini che appare all'hover -->
                 <div class="hover-content">
                     <div class="hover-titles">
                         <h3>
@@ -72,6 +84,7 @@ export default {
                         </h3>
                     </div>
                 </div>
+
             </div>
         </div>
 
