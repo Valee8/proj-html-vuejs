@@ -38,7 +38,7 @@ h1 {
 
 h1,
 h2 {
-  font-family: 'Lora', serif;
+  font-family: $font-family-lora;
   color: $dark-violet-color;
 }
 
