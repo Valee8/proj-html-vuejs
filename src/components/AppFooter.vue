@@ -1,9 +1,14 @@
 <script>
 
+import TopFooter from '../components/TopFooter.vue'
+
 import { store } from '../store.js';
 
 export default {
     name: "AppFooter",
+    components: {
+        TopFooter
+    },
     data() {
         return {
             store,
@@ -33,34 +38,13 @@ export default {
 <template>
 
     <footer>
-        <div class="top-footer">
 
-            <img src="/img/avada-bakery-logo.png" alt="logo bakery" class="logo">
+        <TopFooter />
 
-            <ul class="links">
-                <li v-for="(link, index) in store.links" :key="index" :class="{ active: link.current }">
-                    <a :href="link.url">
-                        {{ link.text }}</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <font-awesome-icon icon="fa-solid fa-cart-shopping" />
-                    </a>
-                </li>
-            </ul>
-
-            <h4>
-                Subscribe to our Newsletter
-            </h4>
-
-            <input type="search" placeholder="Enter email address*">
-            <button>Subscribe</button>
-
-        </div>
 
         <div class="bottom-footer">
 
-            &commat; Copyright 2012 - 2020 &verbar; Avada Theme by ThemeFusion &verbar; All Rights Reserved &verbar;
+            &copy; Copyright 2012 - 2020 &verbar; Avada Theme by ThemeFusion &verbar; All Rights Reserved &verbar;
             Powered by Wordpress
 
 
@@ -81,18 +65,4 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/general.scss' as *;
-
-.logo {
-    width: 120px;
-}
-
-.links {
-    li {
-
-        &:first-child,
-        &:nth-child(8) {
-            display: none;
-        }
-    }
-}
 </style>
