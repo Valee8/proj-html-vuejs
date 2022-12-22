@@ -94,8 +94,9 @@ header {
 
     .links {
         padding-top: 30px;
-        gap: 40px;
+        gap: 20px;
         font-size: 0.7rem;
+        padding-bottom: 30px;
 
         li {
 
