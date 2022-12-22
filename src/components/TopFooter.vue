@@ -53,6 +53,10 @@ export default {
     justify-content: space-between;
     align-items: center;
 
+    button {
+        cursor: pointer;
+    }
+
     .btn {
         border: 1px solid #eeeeef;
         padding: 12px 25px;
@@ -60,6 +64,10 @@ export default {
         &.white {
             margin-right: 10px;
             width: 280px;
+
+            &:hover {
+                background-color: $white-color;
+            }
         }
     }
 
