@@ -68,76 +68,81 @@ export default {
 @use '../styles/general.scss' as *;
 @use '../styles/partials/variables' as *;
 
-.container {
-    text-align: center;
+section {
+    padding: 80px 0;
 
-    .top-section {
-        display: flex;
-        justify-content: space-between;
 
-        h5 {
-            color: $text-color;
-            padding-bottom: 10px;
-        }
+    .container {
+        text-align: center;
 
-        .follow-us {
-            background-color: #f2eef4;
-            width: 50%;
-            margin: 10px 16px 10px 17px;
-            position: relative;
+        .top-section {
+            display: flex;
+            justify-content: space-between;
 
-            .content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            h5 {
+                color: $text-color;
+                padding-bottom: 10px;
+            }
 
-                .btn {
-                    &:hover {
-                        background-color: $white-color;
+            .follow-us {
+                background-color: #f2eef4;
+                width: 50%;
+                margin: 10px 16px 10px 17px;
+                position: relative;
+
+                .content {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    .btn {
+                        &:hover {
+                            background-color: $white-color;
+
+                        }
+                    }
+
+                    h2 {
+                        padding-bottom: 30px;
 
                     }
+
+                    .instagram {
+                        padding-right: 6px;
+                    }
+                }
+            }
+
+            img {
+                width: calc(25% - 20px);
+                margin: 10px;
+
+                &:first-child {
+                    margin-left: 0;
                 }
 
-                h2 {
-                    padding-bottom: 30px;
-
-                }
-
-                .instagram {
-                    padding-right: 6px;
+                &:last-child {
+                    margin-right: 0;
                 }
             }
         }
 
-        img {
-            width: calc(25% - 20px);
-            margin: 10px;
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
 
-            &:first-child {
-                margin-left: 0;
-            }
+            img {
+                width: calc(100% / 4 - 20px);
+                margin: 10px;
 
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
+                &:first-child {
+                    margin-left: 0;
+                }
 
-    .bottom-section {
-        display: flex;
-        justify-content: space-between;
-
-        img {
-            width: calc(100% / 4 - 20px);
-            margin: 10px;
-
-            &:first-child {
-                margin-left: 0;
-            }
-
-            &:last-child {
-                margin-right: 0;
+                &:last-child {
+                    margin-right: 0;
+                }
             }
         }
     }

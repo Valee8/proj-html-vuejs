@@ -117,48 +117,53 @@ export default {
 @use '../styles/general.scss' as *;
 @use '../styles/partials/variables' as *;
 
-.container {
-    text-align: center;
+section {
+    padding: 80px 0;
 
-    h5 {
-        color: $text-color;
-    }
 
-    .locations {
-        display: flex;
-        color: $text-color;
-        padding-top: 20px;
-
-        h2 {
-            color: $dark-violet-color;
-            padding: 20px 0;
-        }
+    .container {
+        text-align: center;
 
         h5 {
-            padding-bottom: 5px;
+            color: $text-color;
         }
 
-        .new-york {
-            background-color: #f1f9fb;
-        }
-
-        .london {
-            background-color: #faf3e3;
-        }
-
-        .info-location {
+        .locations {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            font-size: 0.6rem;
-            padding: 15px 0;
+            color: $text-color;
+            padding-top: 20px;
 
-            .info {
-                width: calc(100% / 3);
+            h2 {
+                color: $dark-violet-color;
+                padding: 20px 0;
+            }
 
-                .telephone,
-                .time {
-                    font-size: 0.7rem;
+            h5 {
+                padding-bottom: 5px;
+            }
+
+            .new-york {
+                background-color: #f1f9fb;
+            }
+
+            .london {
+                background-color: #faf3e3;
+            }
+
+            .info-location {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                font-size: 0.6rem;
+                padding: 15px 0;
+
+                .info {
+                    width: calc(100% / 3);
+
+                    .telephone,
+                    .time {
+                        font-size: 0.7rem;
+                    }
                 }
             }
         }

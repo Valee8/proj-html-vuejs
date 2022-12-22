@@ -111,93 +111,97 @@ export default {
 @use '../styles/general.scss' as *;
 @use '../styles/partials/variables' as *;
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
+section {
+    padding: 80px 0;
 
-    .text-content {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
         text-align: center;
 
-        p {
-            font-size: 0.7rem;
-            color: $text-color;
-            line-height: 20px;
+        .text-content {
+            text-align: center;
+            width: 25%;
+            padding-right: 20px;
+
+            p {
+                font-size: 0.7rem;
+                color: $text-color;
+                line-height: 20px;
+            }
         }
-    }
 
-    .product {
+        .product {
+            width: calc(75% / 4);
 
-        .product-img {
-            position: relative;
+            .product-img {
+                position: relative;
 
-            &:hover .hover-content {
-                display: block;
-            }
+                &:hover .hover-content {
+                    display: block;
+                }
 
-            .hover-content {
-                background-color: rgba(0, 0, 0, .2);
-                top: 0;
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                text-align: center;
-                display: none;
-                z-index: 1;
-            }
+                .hover-content {
+                    background-color: rgba(0, 0, 0, .2);
+                    top: 0;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    display: none;
+                    z-index: 1;
+                }
 
-            .hover-titles {
-                width: 100%;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                color: $white-color;
-                text-transform: uppercase;
-                font-size: 0.9rem;
-                text-shadow: 0 1px 0 #000;
-
-                a {
+                .hover-titles {
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
                     color: $white-color;
+                    text-transform: uppercase;
+                    font-size: 0.9rem;
+                    text-shadow: 0 1px 0 #000;
+
+                    a {
+                        color: $white-color;
+                    }
+
+                    span {
+                        padding: 0 10px;
+                    }
                 }
 
-                span {
-                    padding: 0 10px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    vertical-align: middle;
+                }
+
+                .left-arrow,
+                .right-arrow {
+                    font-size: 0.6rem;
                 }
             }
 
-            img {
-                width: 100%;
-                height: 100%;
-                vertical-align: middle;
-            }
-
-            .left-arrow,
-            .right-arrow {
-                font-size: 0.6rem;
-            }
-        }
-
-        .info-product {
-            color: $dark-violet-color;
-            padding-top: 10px;
-
-            h3 {
-                font-family: $font-family-lora;
-            }
-
-            h4 {
-                font-size: 0.8rem;
-                font-weight: normal;
+            .info-product {
+                color: $dark-violet-color;
+                font-size: 0.7rem;
                 padding-top: 10px;
+
+                h3 {
+                    font-family: $font-family-lora;
+                }
+
+                h4 {
+                    font-size: 0.8rem;
+                    font-weight: normal;
+                    padding-top: 10px;
+                }
             }
         }
-    }
-
-    .text-content,
-    .product {
-        width: 20%;
     }
 }
 </style>

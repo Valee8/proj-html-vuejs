@@ -116,6 +116,7 @@ export default {
 
 section {
     text-align: center;
+    padding: 80px 0;
 
     .text-content {
         padding-bottom: 25px;
@@ -137,7 +138,7 @@ section {
         .header-icons {
             right: 0;
             display: none;
-            right: -30px;
+            right: -60px;
             top: 0;
         }
 
@@ -145,6 +146,14 @@ section {
             width: calc(50% - 35px);
             margin: 0 35px;
             position: relative;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
 
             .img-hover {
                 display: none;
@@ -175,17 +184,6 @@ section {
                     padding: 15px 0 20px 0;
                     color: $white-color;
                     text-shadow: 0 1px 0 #000;
-                }
-            }
-
-            img {
-
-                &:first-child {
-                    margin-left: 0;
-                }
-
-                &:last-child {
-                    margin-right: 0;
                 }
             }
         }

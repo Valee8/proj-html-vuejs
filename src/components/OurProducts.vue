@@ -96,74 +96,79 @@ export default {
 @use '../styles/general.scss' as *;
 @use '../styles/partials/variables' as *;
 
-.container {
-    display: flex;
-    gap: 14px;
+section {
+    padding: 80px 0;
 
-    div {
-        width: calc(100% / 3);
 
-        h5 {
-            color: $text-color;
-        }
+    .container {
+        display: flex;
+        gap: 14px;
 
-        h2 {
-            padding-bottom: 60px;
-        }
-    }
+        div {
+            width: calc(100% / 3);
 
-    .img-content {
-        position: relative;
+            h5 {
+                color: $text-color;
+            }
 
-        &:hover .hover-content {
-            display: block;
-        }
-
-        .hover-content {
-            background-color: rgba(0, 0, 0, .2);
-            top: 0;
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            text-align: center;
-            display: none;
-            z-index: 1;
-
-            .hover-titles {
-                width: 100%;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                color: $white-color;
-                text-shadow: 0 1px 0 #000;
-
-                h6 {
-                    padding: 13px 0;
-                    font-weight: normal;
-                }
-
-                h3 {
-
-                    span {
-                        padding: 0 5px;
-                    }
-
-                    &:last-of-type {
-                        font-weight: normal;
-                    }
-
-                    &:first-of-type {
-                        font-family: $font-family-lora;
-                    }
-                }
+            h2 {
+                padding-bottom: 60px;
             }
         }
 
-        img {
-            vertical-align: middle;
-            width: 100%;
-        }
+        .img-content {
+            position: relative;
 
+            &:hover .hover-content {
+                display: block;
+            }
+
+            .hover-content {
+                background-color: rgba(0, 0, 0, .2);
+                top: 0;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                display: none;
+                z-index: 1;
+
+                .hover-titles {
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: $white-color;
+                    text-shadow: 0 1px 0 #000;
+
+                    h6 {
+                        padding: 13px 0;
+                        font-weight: normal;
+                    }
+
+                    h3 {
+
+                        span {
+                            padding: 0 5px;
+                        }
+
+                        &:last-of-type {
+                            font-weight: normal;
+                        }
+
+                        &:first-of-type {
+                            font-family: $font-family-lora;
+                        }
+                    }
+                }
+            }
+
+            img {
+                vertical-align: middle;
+                width: 100%;
+            }
+
+        }
     }
 }
 </style>

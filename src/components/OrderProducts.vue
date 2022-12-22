@@ -37,7 +37,8 @@ export default {
 section {
     background-image: url('img/call-to-action-bg.jpg');
     background-size: cover;
-    margin: 60px 0;
+    margin-top: 60px;
+    padding: 80px 0;
 
     .container-small {
         color: $white-color;

@@ -145,128 +145,135 @@ export default {
 @use '../styles/general.scss' as *;
 @use '../styles/partials/variables' as *;
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
+section {
+    padding: 80px 0;
 
-    .card {
-        background-size: cover;
-        width: 100%;
-        position: relative;
-        margin: 15px 0;
 
-        .number {
-            position: absolute;
-            right: 45px;
-            top: 35px;
-            color: $white-color;
-            font-size: 4rem;
-        }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
 
-        &.one {
-            min-height: 500px;
-            background-image: url('/img/bakery-process-1.jpg');
+        .card {
+            background-size: cover;
+            width: 100%;
+            position: relative;
+            margin: 15px 0;
 
-            .brightness {
+            .number {
+                position: absolute;
+                right: 45px;
+                top: 35px;
+                color: $white-color;
+                font-size: 4rem;
+            }
 
-                &::after {
-                    content: "";
-                    clear: both;
-                    display: table;
+            &.one {
+                min-height: 500px;
+                background-image: url('/img/bakery-process-1.jpg');
+
+                .brightness {
+
+                    &::after {
+                        content: "";
+                        clear: both;
+                        display: table;
+                    }
+                }
+
+                .text-card {
+                    padding-top: 170px;
+                    float: right;
+                    width: 420px;
+
                 }
             }
 
-            .text-card {
-                padding-top: 170px;
-                float: right;
-                width: 420px;
+            &.two {
+                background-image: url('/img/bakery-process-2.jpg');
+                margin-right: 15px;
+
+                .brightness {
+                    display: flex;
+                    flex-direction: column;
+
+                    h1,
+                    p {
+                        width: 300px;
+                    }
+
+                    h1 {
+                        flex-grow: 1
+                    }
+                }
 
             }
-        }
 
-        &.two {
-            background-image: url('/img/bakery-process-2.jpg');
-
-            .brightness {
-                display: flex;
-                flex-direction: column;
-
-                h1,
-                p {
-                    width: 300px;
-                }
+            &.three {
+                background-color: #f2eef4;
+                padding: 80px 75px;
+                margin-left: 15px;
 
                 h1 {
-                    flex-grow: 1
-                }
-            }
-
-        }
-
-        &.three {
-            background-color: #f2eef4;
-            padding: 80px 75px;
-
-            h1 {
-                color: $dark-violet-color;
-                font-size: 2.2rem;
-            }
-
-            h5 {
-                color: $text-color;
-                padding: 20px 0;
-                font-size: 0.7rem;
-
-                &:last-of-type {
-                    text-transform: none;
-                }
-            }
-        }
-
-        .brightness {
-            background-color: rgba(0, 0, 0, 0.4);
-            height: 100%;
-            padding: 40px 60px;
-
-            &:not(.three) {
-                h1 {
-                    color: $white-color;
-                    width: 500px;
+                    color: $dark-violet-color;
+                    font-size: 2.2rem;
                 }
 
                 h5 {
-                    color: rgba(255, 255, 255, 0.6);
-                }
+                    color: $text-color;
+                    padding: 20px 0;
+                    font-size: 0.7rem;
 
-                p {
-                    color: $white-color;
-                    font-size: 0.8rem;
-                    line-height: 23px;
-                    padding: 15px 0;
+                    &:last-of-type {
+                        text-transform: none;
+                    }
                 }
             }
-        }
-
-        &.two,
-        &.three {
-            width: 50%;
-        }
-
-        &.four {
-            min-height: 500px;
-            background-image: url('/img/bakery-process-3.jpg');
 
             .brightness {
-                display: flex;
-                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.4);
+                height: 100%;
+                padding: 40px 60px;
 
-                h1 {
-                    flex-grow: 1;
+                &:not(.three) {
+                    h1 {
+                        color: $white-color;
+                        width: 500px;
+                    }
+
+                    h5 {
+                        color: rgba(255, 255, 255, 0.6);
+                    }
+
+                    p {
+                        color: $white-color;
+                        font-size: 0.8rem;
+                        line-height: 23px;
+                        padding: 15px 0;
+                    }
                 }
+            }
 
-                h5,
-                p {
-                    width: 400px;
+            &.two,
+            &.three {
+                width: calc(50% - 15px);
+            }
+
+            &.four {
+                min-height: 500px;
+                background-image: url('/img/bakery-process-3.jpg');
+
+                .brightness {
+                    display: flex;
+                    flex-direction: column;
+
+                    h1 {
+                        flex-grow: 1;
+                    }
+
+                    h5,
+                    p {
+                        width: 400px;
+                    }
                 }
             }
         }
