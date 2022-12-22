@@ -35,6 +35,7 @@ export default {
 header {
     background-image: url('/img/hero-header-bakery.jpg');
     background-size: cover;
+    background-position: center;
 
 }
 </style>
