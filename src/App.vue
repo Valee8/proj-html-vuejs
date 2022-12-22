@@ -60,11 +60,21 @@ h2 {
   &.white {
     background-color: $white-color;
     color: $dark-violet-color;
+
+    &:hover {
+      background-color: $dark-violet-color;
+      color: #ece8f2;
+    }
   }
 
   &.violet {
     background-color: $dark-violet-color;
     color: $white-color;
+
+    &:hover {
+      color: $dark-violet-color;
+      background-color: #f0edf5;
+    }
   }
 }
 
@@ -97,6 +107,7 @@ h5 {
   padding: 22px 11px;
   color: $white-color;
   font-size: 0.9rem;
+  z-index: 20;
 
   a {
     color: #e9dedc;
