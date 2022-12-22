@@ -7,6 +7,24 @@ export default {
     data() {
         return {
             store,
+            socials: [
+                {
+                    icon: 'fa-brands fa-instagram',
+                    url: '#'
+                },
+                {
+                    icon: 'fa-brands fa-twitter',
+                    url: '#'
+                },
+                {
+                    icon: 'fa-brands fa-facebook-f',
+                    url: '#'
+                },
+                {
+                    icon: 'fa-brands fa-pinterest-p',
+                    url: '#'
+                }
+            ]
         }
     }
 }
@@ -31,9 +49,28 @@ export default {
                 </li>
             </ul>
 
+            <h4>
+                Subscribe to our Newsletter
+            </h4>
+
+            <input type="search" placeholder="Enter email address*">
+            <button>Subscribe</button>
+
         </div>
 
         <div class="bottom-footer">
+
+            &commat; Copyright 2012 - 2020 &verbar; Avada Theme by ThemeFusion &verbar; All Rights Reserved &verbar;
+            Powered by Wordpress
+
+
+            <ul>
+                <li v-for="social in socials" :key="index">
+                    <a :href="social.url">
+                        <font-awesome-icon :icon="social.icon" />
+                    </a>
+                </li>
+            </ul>
 
         </div>
 
