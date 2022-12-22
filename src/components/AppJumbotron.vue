@@ -35,7 +35,10 @@ export default {
 
                 <li>
                     <a href="#">
-                        Icona
+                        <font-awesome-icon icon="fa-solid fa-folder" />
+                        <div class="text-icon">
+                            Demos
+                        </div>
                     </a>
                 </li>
 
@@ -47,7 +50,7 @@ export default {
                             </sup>
                             39
                         </div>
-                        <div class="on-sale">
+                        <div class="text-icon">
                             On sale
                         </div>
                     </a>
@@ -65,7 +68,7 @@ export default {
 
 .jumbotron {
     width: 100%;
-    min-height: 530px;
+    min-height: 600px;
     padding-top: 120px;
     position: relative;
 
@@ -84,6 +87,11 @@ export default {
             font-weight: bold;
             box-shadow: 0 0 20px rgba(0, 0, 0, .2);
 
+            a {
+                color: #33475b;
+            }
+
+
             .number {
                 color: #65bc7b;
                 font-size: 1.2rem;
@@ -94,8 +102,9 @@ export default {
                 }
             }
 
-            .on-sale {
+            .text-icon {
                 font-size: 0.6rem;
+                color: $text-color;
             }
         }
     }
