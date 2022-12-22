@@ -45,8 +45,6 @@ h2 {
 .links {
   display: flex;
   list-style-type: none;
-  gap: 20px;
-  font-size: 0.6rem;
 
   a {
     color: $dark-violet-color;
@@ -56,7 +54,7 @@ h2 {
 
 .btn {
   padding: 9px 25px;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: 0.7rem;
 
   &.white {
