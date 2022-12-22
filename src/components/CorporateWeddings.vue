@@ -26,34 +26,6 @@ export default {
             <!-- Contenuto con immagini -->
             <div class="img-content">
 
-                <!-- Icone in alto a destra - appaiono all'hover -->
-                <ul class="header-icons">
-
-                    <li>
-                        <a href="#">
-                            <font-awesome-icon icon="fa-solid fa-folder" />
-                            <div class="text-icon">
-                                Demos
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <div class="number">
-                                <sup>
-                                    &dollar;
-                                </sup>
-                                39
-                            </div>
-                            <div class="text-icon">
-                                On sale
-                            </div>
-                        </a>
-                    </li>
-
-                </ul>
-
                 <!-- Parte immagine Corporate -->
                 <div class="image">
                     <img src="/img/corporate-bg.jpg" alt="Corporate" class="img">
@@ -135,16 +107,9 @@ section {
             display: block;
         }
 
-        .header-icons {
-            right: 0;
-            display: none;
-            right: -60px;
-            top: 0;
-        }
-
         .image {
-            width: calc(50% - 35px);
-            margin: 0 35px;
+            width: calc(50% - 25px);
+            margin: 0 25px;
             position: relative;
 
             &:first-child {
