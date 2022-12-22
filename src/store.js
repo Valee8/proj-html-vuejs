@@ -5,47 +5,47 @@ export const store = reactive({
         {
             text: 'Home',
             url: '#',
-            current: 'true'
+            current: true
         },
         {
             text: 'Shop',
             url: '#',
-            current: 'false'
+            current: false
         },
         {
             text: 'About',
             url: '#',
-            current: 'false'
+            current: false
         },
         {
             text: 'Gallery',
             url: '#',
-            current: 'false'
+            current: false
         },
         {
             text: 'Locations',
             url: '#',
-            current: 'false'
+            current: false
         },
         {
             text: 'Journal',
             url: '#',
-            current: 'false'
+            current: false
         },
         {
             text: 'Contact',
             url: '#',
-            current: 'false'
+            current: false
         },
         {
             text: 'My Account',
             url: '#',
-            current: 'false'
+            current: false
         },
         {
             text: 'Orders',
             url: '#',
-            current: 'false'
+            current: false
         },
     ]
 });
