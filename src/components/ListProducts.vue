@@ -43,6 +43,7 @@ export default {
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quas nihil odio, temporibus non,
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
 
                 <a href="#" class="btn violet">
@@ -50,9 +51,22 @@ export default {
                 </a>
             </div>
 
-            <div class="products">
-                <div class="card" v-for="(product, index) in products" :key="index">
+            <div class="product" v-for="(product, index) in products" :key="index">
+
+                <div class="product-img">
                     <img :src="product.img" :alt="product.nameProduct">
+
+                    <a href="#" class="left-arrow" v-if="index === 0">
+                        <font-awesome-icon icon="fa-solid fa-angle-left" />
+                    </a>
+
+
+                    <a href="#" class="right-arrow" v-if="index === 3">
+                        <font-awesome-icon icon="fa-solid fa-angle-right" />
+                    </a>
+                </div>
+
+                <div class="info-product">
                     <h3>
                         {{ product.nameProduct }}
                     </h3>
@@ -75,15 +89,55 @@ export default {
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
 
     .text-content {
-        width: 25%;
         text-align: center;
+
+        p {
+            font-size: 0.7rem;
+            color: $text-color;
+            line-height: 20px;
+        }
     }
 
-    .products {
-        display: flex;
-        text-align: center;
+    .product {
+
+        .product-img {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .left-arrow,
+            .right-arrow {
+                font-size: 0.6rem;
+            }
+        }
+
+        .info-product {
+            color: $dark-violet-color;
+            padding-top: 10px;
+
+            h3 {
+                font-family: $font-family-lora;
+            }
+
+            h4 {
+                font-size: 0.8rem;
+                font-weight: normal;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .text-content,
+    .product {
+        width: 20%;
     }
 }
 </style>
