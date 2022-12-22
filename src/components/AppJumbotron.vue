@@ -71,63 +71,70 @@ export default {
 @use '../styles/general.scss' as *;
 @use '../styles/partials/variables' as *;
 
+
+
 .jumbotron {
     width: 100%;
     min-height: 600px;
     padding-top: 120px;
-    position: relative;
     margin-bottom: 80px;
 
-    .header-icons {
-        list-style-type: none;
-        position: absolute;
-        text-align: center;
-        right: 13px;
-        top: 40px;
+    .container {
 
-        li {
-            background-color: $white-color;
-            margin: 5px 0;
-            border-radius: 3px;
-            padding: 5px;
-            font-weight: bold;
-            box-shadow: 0 0 20px rgba(0, 0, 0, .2);
-
-            a {
-                color: #33475b;
-            }
+        position: relative;
 
 
-            .number {
-                color: #65bc7b;
-                font-size: 1.2rem;
+        .header-icons {
+            list-style-type: none;
+            position: absolute;
+            text-align: center;
+            right: 13px;
+            top: 40px;
 
-                sup {
-                    font-size: 0.8rem;
-                    letter-spacing: -2px;
+            li {
+                background-color: $white-color;
+                margin: 5px 0;
+                border-radius: 3px;
+                padding: 5px;
+                font-weight: bold;
+                box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+
+                a {
+                    color: #33475b;
+                }
+
+
+                .number {
+                    color: #65bc7b;
+                    font-size: 1.2rem;
+
+                    sup {
+                        font-size: 0.8rem;
+                        letter-spacing: -2px;
+                    }
+                }
+
+                .text-icon {
+                    font-size: 0.6rem;
+                    color: $text-color;
                 }
             }
+        }
 
-            .text-icon {
-                font-size: 0.6rem;
-                color: $text-color;
+        .text-content {
+            width: 350px;
+            color: $text-color;
+
+            h1 {
+                color: $dark-violet-color;
             }
+
+            p {
+                font-size: 0.8rem;
+                line-height: 20px;
+            }
+
         }
-    }
-
-    .text-content {
-        width: 350px;
-        color: $text-color;
-
-        h1 {
-            color: $dark-violet-color;
-        }
-
-        p {
-            font-size: 0.8rem;
-            line-height: 20px;
-        }
-
     }
 }
 </style>
