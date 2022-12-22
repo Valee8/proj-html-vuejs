@@ -45,9 +45,14 @@ h2 {
 .links {
   display: flex;
   list-style-type: none;
+  text-align: center;
 
   a {
     color: $dark-violet-color;
+
+    &:not(.active):hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -111,6 +116,41 @@ h5 {
 
   a {
     color: #e9dedc;
+  }
+}
+
+.header-icons {
+  list-style-type: none;
+  position: absolute;
+  text-align: center;
+
+  li {
+    background-color: $white-color;
+    margin: 5px 0;
+    border-radius: 3px;
+    padding: 5px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+
+    a {
+      color: #33475b;
+    }
+
+
+    .number {
+      color: #65bc7b;
+      font-size: 1.2rem;
+
+      sup {
+        font-size: 0.8rem;
+        letter-spacing: -2px;
+      }
+    }
+
+    .text-icon {
+      font-size: 0.6rem;
+      color: $text-color;
+    }
   }
 }
 </style>
