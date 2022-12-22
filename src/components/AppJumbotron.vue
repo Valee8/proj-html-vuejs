@@ -11,7 +11,9 @@ export default {
     <div class="jumbotron">
 
         <div class="container">
+            <!-- Contenuto jumbotron -->
             <div class="text-content">
+                <!-- Titoli -->
                 <h5>
                     Fresh &amp; Tasty Bakery Everyday
                 </h5>
@@ -20,17 +22,20 @@ export default {
                     The Perfect Fresh Bread
                 </h1>
 
+                <!-- Paragrafo -->
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita veniam illum corrupti commodi iste
                     asperiores Lorem ipsum dolor sit amet consectetur.
                 </p>
 
+                <!-- Bottone -->
                 <a href="#" class="btn white">
                     Explore our products
                 </a>
 
             </div>
 
+            <!-- Icone in alto a destra -->
             <ul class="header-icons">
 
                 <li>

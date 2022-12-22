@@ -7,9 +7,11 @@ export default {
 
 <template>
 
+    <!-- Sezione Order Products -->
     <section>
         <div class="container-small">
             <div class="text-content">
+                <!-- Titoli -->
                 <h5>
                     Try our seasonal products
                 </h5>
@@ -18,6 +20,7 @@ export default {
                     Order for pick-up or delivery to your home
                 </h1>
 
+                <!-- Bottone -->
                 <a href="#" class="btn white">
                     Shop Now
                 </a>

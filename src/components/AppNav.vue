@@ -15,18 +15,22 @@ export default {
 
 <template>
 
+    <!-- Nav -->
     <nav>
 
+        <!-- Logo -->
         <a href="/">
             <img src="/img/avada-bakery-logo.png" alt="logo bakery" class="logo">
         </a>
 
+        <!-- Links navbar -->
         <ul class="links">
             <li v-for="(link, index) in store.links" :key="index">
                 <a :href="link.url" :class="{ active: link.current }">
                     {{ link.text }}</a>
                 <div :class="{ border: link.current }"></div>
             </li>
+            <!-- Carrello -->
             <li class="shopping">
                 <a href="#">
                     <font-awesome-icon icon="fa-solid fa-cart-shopping" />

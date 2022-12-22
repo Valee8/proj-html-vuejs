@@ -23,15 +23,19 @@ export default {
 
     <div class="top-footer">
 
+        <!-- Navbar -->
         <div class="nav">
             <AppNav />
         </div>
 
+        <!-- Parte newsletter -->
         <div class="newsletter">
+            <!-- Titolo -->
             <h4>
                 Subscribe to our Newsletter
             </h4>
 
+            <!-- Input search e bottone -->
             <input type="search" placeholder="Enter email address*" class="btn white">
             <button class="btn violet">Subscribe</button>
         </div>

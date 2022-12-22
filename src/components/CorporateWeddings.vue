@@ -7,10 +7,13 @@ export default {
 
 <template>
 
+    <!-- Sezione Corporate e Weddings -->
     <section>
 
         <div class="container">
+            <!-- Contenuto con testo -->
             <div class="text-content">
+                <!-- Titoli -->
                 <h5>
                     Corporate &amp; Weddings
                 </h5>
@@ -20,6 +23,7 @@ export default {
                 </h2>
             </div>
 
+            <!-- Contenuto con immagini -->
             <div class="img-content">
                 <img src="/img/corporate-bg.jpg" alt="Corporate">
 

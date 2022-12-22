@@ -10,11 +10,13 @@ export default {
 
     <div class="bottom-footer">
 
+        <!-- Scritta copyright -->
         <div class="copyright">
             &copy; Copyright 2012 - 2020 &verbar; Avada Theme by ThemeFusion &verbar; All Rights Reserved &verbar;
             Powered by Wordpress
         </div>
 
+        <!-- Elenco link ai social -->
         <ul class="socials">
             <li v-for="(socials, index) in social" :key="index">
                 <a :href="socials.url">

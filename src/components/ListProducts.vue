@@ -33,40 +33,50 @@ export default {
 
 <template>
 
+    <!-- Sezione ListProducts -->
     <section>
 
         <div class="container">
+            <!-- Contenuto con testo -->
             <div class="text-content">
+                <!-- Titolo -->
                 <h2>
                     Find a freshly baked product perfect for you
                 </h2>
 
+                <!-- Paragrafo -->
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quas nihil odio, temporibus non,
                     Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
 
+                <!-- Bottone -->
                 <a href="#" class="btn violet">
                     Shop All Products
                 </a>
             </div>
 
+            <!-- Inizio card prodotti -->
             <div class="product" v-for="(product, index) in products" :key="index">
 
+                <!-- Immagine prodotto -->
                 <div class="product-img">
                     <img :src="product.img" :alt="product.nameProduct">
 
+                    <!-- Freccia sinistra -->
                     <a href="#" class="left-arrow" v-if="index === 0">
                         <font-awesome-icon icon="fa-solid fa-angle-left" />
                     </a>
 
-
+                    <!-- Freccia destra -->
                     <a href="#" class="right-arrow" v-if="index === 3">
                         <font-awesome-icon icon="fa-solid fa-angle-right" />
                     </a>
                 </div>
 
+                <!-- Info prodotto -->
                 <div class="info-product">
+                    <!-- Titoli -->
                     <h3>
                         {{ product.nameProduct }}
                     </h3>
