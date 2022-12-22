@@ -2,17 +2,17 @@
 
 import TopFooter from '../components/TopFooter.vue'
 
-import { store } from '../store.js';
+import BottomFooter from '../components/BottomFooter.vue'
 
 export default {
     name: "AppFooter",
     components: {
-        TopFooter
+        TopFooter,
+        BottomFooter
     },
     data() {
         return {
-            store,
-            socials: [
+            icons: [
                 {
                     icon: 'fa-brands fa-instagram',
                     url: '#'
@@ -39,23 +39,10 @@ export default {
 
     <footer>
 
-        <TopFooter />
+        <div class="container">
+            <TopFooter />
 
-
-        <div class="bottom-footer">
-
-            &copy; Copyright 2012 - 2020 &verbar; Avada Theme by ThemeFusion &verbar; All Rights Reserved &verbar;
-            Powered by Wordpress
-
-
-            <ul>
-                <li v-for="social in socials" :key="index">
-                    <a :href="social.url">
-                        <font-awesome-icon :icon="social.icon" />
-                    </a>
-                </li>
-            </ul>
-
+            <BottomFooter :social="icons" />
         </div>
 
 
@@ -65,4 +52,8 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/general.scss' as *;
+
+footer {
+    padding: 50px 0;
+}
 </style>
