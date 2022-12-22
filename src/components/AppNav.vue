@@ -27,8 +27,10 @@ export default {
         <ul class="links">
             <li v-for="(link, index) in store.links" :key="index">
                 <a :href="link.url" :class="{ active: link.current }">
-                    {{ link.text }}</a>
-                <div :class="{ border: link.current }"></div>
+                    {{ link.text }}
+
+                    <div :class="{ border: link.current }"></div>
+                </a>
             </li>
             <!-- Carrello -->
             <li class="shopping">
@@ -66,13 +68,14 @@ header {
                 position: relative;
 
                 a {
+                    text-align: center;
+
 
                     .border {
                         background-color: $dark-violet-color;
-                        height: 4px;
-                        width: 35px;
-                        position: absolute;
-                        bottom: 0;
+                        height: 2px;
+                        width: 30px;
+                        margin: 3px auto 0 auto;
                     }
 
                     &:nth-child(9) {
@@ -98,6 +101,12 @@ header {
         li {
 
             &.shopping {
+
+                a {
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
 
                 a::after {
                     content: "0";
