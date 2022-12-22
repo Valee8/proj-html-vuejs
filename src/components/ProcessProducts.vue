@@ -127,50 +127,97 @@ export default {
         background-size: cover;
         width: 100%;
         position: relative;
+        margin: 15px 0;
+
+        .number {
+            position: absolute;
+            right: 45px;
+            top: 35px;
+            color: $white-color;
+            font-size: 4rem;
+        }
 
         &.one {
+            min-height: 500px;
+            background-image: url('/img/bakery-process-1.jpg');
+
+            .brightness {
+
+                &::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+            }
+
             .text-card {
-                padding-top: 80px;
+                padding-top: 120px;
                 float: right;
                 width: 420px;
 
             }
         }
 
+        &.two {
+            background-image: url('/img/bakery-process-2.jpg');
+
+            .brightness {
+                display: flex;
+                flex-direction: column;
+
+                h1,
+                p {
+                    width: 300px;
+                }
+
+                h1 {
+                    flex-grow: 1
+                }
+            }
+
+        }
+
         &.three {
-            padding: 60px;
+            background-color: #f2eef4;
+            padding: 80px 75px;
 
             h1 {
                 color: $dark-violet-color;
+                font-size: 2.2rem;
             }
 
             h5 {
                 color: $text-color;
                 padding: 20px 0;
+                font-size: 0.7rem;
+
+                &:last-of-type {
+                    text-transform: none;
+                }
             }
         }
 
         .brightness {
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.3);
             height: 100%;
-            padding: 60px;
-        }
+            padding: 40px 60px;
 
-        &:not(.three) {
-            h1 {
-                color: $white-color;
-                width: 500px;
-            }
+            &:not(.three) {
+                h1 {
+                    color: $white-color;
+                    width: 500px;
+                }
 
-            h5 {
-                color: rgba(255, 255, 255, 0.6);
-            }
+                h5 {
+                    color: rgba(255, 255, 255, 0.6);
+                }
 
-            p {
-                color: $white-color;
-                font-size: 0.8rem;
-                line-height: 23px;
-                padding: 15px 0;
+                p {
+                    color: $white-color;
+                    font-size: 0.8rem;
+                    line-height: 23px;
+                    padding: 15px 0;
+                }
             }
         }
 
@@ -179,29 +226,24 @@ export default {
             width: 50%;
         }
 
-        &.one {
-            background-image: url('/img/bakery-process-1.jpg');
-        }
-
-        &.two {
-            background-image: url('/img/bakery-process-2.jpg');
-        }
-
-        &.three {
-            background-color: #f2eef4;
-        }
-
         &.four {
+            min-height: 500px;
             background-image: url('/img/bakery-process-3.jpg');
+
+            .brightness {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    flex-grow: 1;
+                }
+
+                h5,
+                p {
+                    width: 400px;
+                }
+            }
         }
     }
-
-
-
-
-
-
-
-
 }
 </style>
