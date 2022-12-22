@@ -61,6 +61,13 @@ export default {
         border: 1px solid #eeeeef;
         padding: 12px 25px;
 
+        &.violet {
+            &:hover {
+                background-color: $dark-violet-color;
+                color: $white-color;
+            }
+        }
+
         &.white {
             margin-right: 10px;
             width: 280px;
