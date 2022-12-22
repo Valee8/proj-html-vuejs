@@ -22,6 +22,7 @@ export default {
 
             <div class="img-content">
                 <img src="/img/corporate-bg.jpg" alt="Corporate">
+
                 <img src="/img/wedding-bg.jpg" alt="Wedding">
             </div>
         </div>
@@ -37,9 +38,26 @@ export default {
 section {
     text-align: center;
 
+    .text-content {
+        padding-bottom: 25px;
+
+
+        h5 {
+            color: $text-color;
+        }
+    }
+
     img {
-        width: calc(50% - 40px);
-        margin: 0 20px;
+        width: calc(50% - 35px);
+        margin: 0 35px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
 }
