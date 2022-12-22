@@ -14,9 +14,9 @@ export default {
                     Try our seasonal products
                 </h5>
 
-                <h2>
+                <h1>
                     Order for pick-up or delivery to your home
-                </h2>
+                </h1>
 
                 <a href="#" class="btn white">
                     Shop Now
@@ -38,6 +38,22 @@ section {
     .container-small {
         color: $white-color;
         padding: 20px 0;
+
+        h5 {
+            color: #929295;
+        }
+
+        h1 {
+            color: $white-color;
+            width: 600px;
+            padding-bottom: 70px;
+        }
+
+        .btn {
+            padding: 11px 30px;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
     }
 }
 </style>
