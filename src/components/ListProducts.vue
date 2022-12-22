@@ -72,6 +72,19 @@ export default {
                     <a href="#" class="right-arrow" v-if="index === 3">
                         <font-awesome-icon icon="fa-solid fa-angle-right" />
                     </a>
+
+                    <div class="hover-content">
+                        <div class="hover-titles">
+                            <h5>
+                                <a href="#">
+                                    Select options
+                                </a> <span>&sol;</span>
+                                <a href="#">
+                                    Quick view
+                                </a>
+                            </h5>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Info prodotto -->
@@ -118,9 +131,44 @@ export default {
         .product-img {
             position: relative;
 
+            &:hover .hover-content {
+                display: block;
+            }
+
+            .hover-content {
+                background-color: rgba(0, 0, 0, .2);
+                top: 0;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                display: none;
+                z-index: 1;
+            }
+
+            .hover-titles {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $white-color;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                text-shadow: 0 1px 0 #000;
+
+                a {
+                    color: $white-color;
+                }
+
+                span {
+                    padding: 0 10px;
+                }
+            }
+
             img {
                 width: 100%;
                 height: 100%;
+                vertical-align: middle;
             }
 
             .left-arrow,
