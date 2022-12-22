@@ -17,8 +17,10 @@ export default {
 
     <header>
 
-        <!-- Nav -->
-        <AppNav />
+        <div class="container">
+            <!-- Nav -->
+            <AppNav />
+        </div>
 
         <!-- Jumbotron -->
         <AppJumbotron />
@@ -30,7 +32,6 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/general.scss' as *;
 @use '../styles/partials/variables' as *;
-
 
 header {
     background-image: url('/img/hero-header-bakery.jpg');

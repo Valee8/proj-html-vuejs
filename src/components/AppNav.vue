@@ -52,7 +52,6 @@ header {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 0 30px;
 
         .logo {
             width: 150px;
