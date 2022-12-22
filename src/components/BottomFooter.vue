@@ -36,7 +36,7 @@ export default {
 .bottom-footer {
     display: flex;
     justify-content: space-between;
-    padding-top: 80px;
+    padding-top: 50px;
 
     .copyright {
         font-size: 0.6rem;
