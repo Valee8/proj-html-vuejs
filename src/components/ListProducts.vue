@@ -188,8 +188,8 @@ section {
 
             .info-product {
                 color: $dark-violet-color;
-                font-size: 0.7rem;
                 padding-top: 10px;
+                font-size: 0.9rem;
 
                 h3 {
                     font-family: $font-family-lora;
@@ -203,5 +203,18 @@ section {
             }
         }
     }
+}
+
+@media all and (max-width: 1200px) {
+
+    .product {
+
+        .info-product {
+            h3 {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
 }
 </style>
