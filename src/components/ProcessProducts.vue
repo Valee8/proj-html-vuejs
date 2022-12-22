@@ -151,7 +151,7 @@ export default {
             }
 
             .text-card {
-                padding-top: 120px;
+                padding-top: 170px;
                 float: right;
                 width: 420px;
 
@@ -198,7 +198,7 @@ export default {
         }
 
         .brightness {
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.4);
             height: 100%;
             padding: 40px 60px;
 
