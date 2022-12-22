@@ -75,28 +75,6 @@ export default {
             width: 100%;
         }
 
-        .left-arrow {
-            left: 0;
-        }
-
-        .right-arrow {
-            right: 0;
-        }
-
-        .left-arrow,
-        .right-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: #a691b2;
-            padding: 22px 11px;
-            color: $white-color;
-            font-size: 0.9rem;
-
-            a {
-                color: #e9dedc;
-            }
-        }
     }
 }
 </style>
