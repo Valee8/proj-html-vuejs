@@ -79,8 +79,40 @@ export default {
     margin-bottom: 80px;
 
     .header-icons {
+        list-style-type: none;
+        position: absolute;
+        text-align: center;
         right: 13px;
         top: 40px;
+
+        li {
+            background-color: $white-color;
+            margin: 5px 0;
+            border-radius: 3px;
+            padding: 5px;
+            font-weight: bold;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+
+            a {
+                color: #33475b;
+            }
+
+
+            .number {
+                color: #65bc7b;
+                font-size: 1.2rem;
+
+                sup {
+                    font-size: 0.8rem;
+                    letter-spacing: -2px;
+                }
+            }
+
+            .text-icon {
+                font-size: 0.6rem;
+                color: $text-color;
+            }
+        }
     }
 
     .text-content {
