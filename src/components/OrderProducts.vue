@@ -34,6 +34,7 @@ export default {
 section {
     background-image: url('img/call-to-action-bg.jpg');
     background-size: cover;
+    margin: 60px 0;
 
     .container-small {
         color: $white-color;
@@ -45,7 +46,7 @@ section {
 
         h1 {
             color: $white-color;
-            width: 600px;
+            width: 620px;
             padding-bottom: 70px;
         }
 
