@@ -46,7 +46,7 @@ export default {
                                 Open All Week
                             </h5>
                             <div class="time">
-                                9:00 AM - 6:00 AM
+                                9:00 AM - 6:00 PM
                             </div>
                         </div>
 
@@ -64,7 +64,7 @@ export default {
                     <img src="/img/london-bk.jpg" alt="London Bakerie">
 
                     <h2>
-                        New York
+                        London
                     </h2>
 
                     <div class="info-location">
@@ -82,7 +82,7 @@ export default {
                                 Open All Week
                             </h5>
                             <div class="time">
-                                9:00 AM - 6:00 AM
+                                9:00 AM - 6:00 PM
                             </div>
                         </div>
                         <div class="info">
@@ -108,9 +108,14 @@ export default {
 .container {
     text-align: center;
 
+    h5 {
+        color: $text-color;
+    }
+
     .locations {
         display: flex;
         color: $text-color;
+        padding-top: 20px;
 
         h2 {
             color: $dark-violet-color;
