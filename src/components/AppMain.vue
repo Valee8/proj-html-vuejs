@@ -45,6 +45,6 @@ export default {
 @use '../styles/partials/variables' as *;
 
 section {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 </style>
