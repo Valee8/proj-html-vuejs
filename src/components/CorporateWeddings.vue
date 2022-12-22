@@ -25,6 +25,33 @@ export default {
 
             <!-- Contenuto con immagini -->
             <div class="img-content">
+
+                <ul class="header-icons">
+
+                    <li>
+                        <a href="#">
+                            <font-awesome-icon icon="fa-solid fa-folder" />
+                            <div class="text-icon">
+                                Demos
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="number">
+                                <sup>
+                                    &dollar;
+                                </sup>
+                                39
+                            </div>
+                            <div class="text-icon">
+                                On sale
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
                 <div class="image">
                     <img src="/img/corporate-bg.jpg" alt="Corporate" class="img">
                     <img src="/img/corporate-hover-bg.jpg" alt="Corporate" class="img-hover">
@@ -91,6 +118,18 @@ section {
 
     .img-content {
         display: flex;
+        position: relative;
+
+        &:hover .header-icons {
+            display: block;
+        }
+
+        .header-icons {
+            right: 0;
+            display: none;
+            right: -30px;
+            top: 0;
+        }
 
         .image {
             width: calc(50% - 35px);
